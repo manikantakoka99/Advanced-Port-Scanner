@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Port Scan Report - </title>
+<style>
+  body  { font-family: Arial; background:#0d1117; color:#c9d1d9; padding:30px; }
+  h1    { color:#58a6ff; }
+  h2    { color:#58a6ff; border-bottom:1px solid #30363d; padding-bottom:8px; }
+  table { width:100%; border-collapse:collapse; margin-top:15px; }
+  th    { background:#161b22; color:#58a6ff; padding:12px; text-align:left; }
+  td    { padding:10px; border-bottom:1px solid #21262d; }
+  tr:hover { background:#161b22; }
+  .HIGH   { color:#ff7b72; font-weight:bold; }
+  .MEDIUM { color:#e3b341; font-weight:bold; }
+  .LOW    { color:#3fb950; }
+  .stat   { background:#161b22; padding:15px; border-radius:8px;
+            display:inline-block; margin:10px; text-align:center; }
+  .num    { font-size:2em; color:#58a6ff; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<h1>🔍 Port Scan Report</h1>
+
+<div class="stat">
+  <div class="num">scanme.nmap.org</div>
+  <div>Target</div>
+</div>
+<div class="stat">
+  <div class="num">45.33.32.156</div>
+  <div>IP Address</div>
+</div>
+<div class="stat">
+  <div class="num">2</div>
+  <div>Open Ports</div>
+</div>
+<div class="stat">
+  <div class="num">2026-05-22 06:29</div>
+  <div>Scan Date</div>
+</div>
+
+<h2>Open Ports</h2>
+<table>
+  <tr>
+    <th>Port</th>
+    <th>Service</th>
+    <th>Risk Level</th>
+    <th>Banner</th>
+  </tr>
+  
+  <tr>
+    <td><strong>22</strong></td>
+    <td>SSH</td>
+    <td class="MEDIUM">MEDIUM</td>
+    <td style="font-family:monospace;font-size:0.85em">SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13</td>
+  </tr>
+  
+  <tr>
+    <td><strong>80</strong></td>
+    <td>HTTP</td>
+    <td class="LOW">LOW</td>
+    <td style="font-family:monospace;font-size:0.85em">HTTP/1.1 200 OK
+Date: Fri, 22 May 2026 10:29:51 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html</td>
+  </tr>
+  
+</table>
+
+
+
+
+</body>
+</html>
